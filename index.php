@@ -23,7 +23,33 @@
     $hadir = false;
     $umur = 21;
     $nokp = '000716020497';
+
+    $x = 100;
+    $y = '100';
+
+    if ($x !== $y) {
+        echo 'Tak sama';
+    } else {
+        echo 'Masih sama';
+    }
     ?>
+
+    <p>
+        <?php
+        echo 20 . 21;
+        ?>
+    </p>
+
+    <h2>
+        <?php
+        $bandar = 'Alor Setar';
+        $baru = 'Bandar: ';
+        for($x = 0; $x <strlen($bandar); $x++) {
+            $baru .= $bandar[$x] . ' ';
+        }
+        echo $baru;
+        ?>
+    </h2>
 </body>
 
 </html>
